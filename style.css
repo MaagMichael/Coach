@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/* --- Variables --- */
+
+:root {
+  --theme-color: #4e7ba7;
+  --bg-light-color: #d3d0da;
+  --bg-dark-color: #b5b3be;
+  --text-color: #0b1320;
+  --link-color: #d28f1b;
+}
+/* --- General CSS --- */
+body {
+  margin: 0;  
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+.container {
+  padding: 3rem;
+}
+
+h1,p,a {
+  color: var(--text-color);
+  font-size: 3rem;
+}
+
+p,
+a {
+  font-size: 1.5rem;
+}
+
+/* ########################### NAV BAR ######################################## */
+.navbar {
+  overflow: hidden;
+  gap: 3rem;  
+  background-color: var(--theme-color);
+}
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: var(--bg-light-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navbar_right {
+  float: right;
+  margin-right: 3rem;
+}
+.navbar img {
+  float: left;
+  width: 100px;
+  padding-left: 3rem;
+}
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: var(--link-color);
+}
+
+/* ########################### HEADLINE ######################################## */
+.headline {
+  padding: 3rem;
+  text-align: center;
+}
+.headline h1 {
+  font-size: 3rem;
+}
+/* ########################### ABOUT ######################################## */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, auto));
+  /* grid-template-columns: repeat(auto-fill, minmax(15em, 1fr)); */
+  grid-gap: 1rem;
+  /* border: 2px solid rgb(247, 0, 255); */
+}
+
+.icon_pic_left, .icon_pic_right {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.icon_pic_left img, .icon_pic_right img {
+  box-shadow: 0px 0px 2rem #0000002f;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+/* ########################### TEAM ######################################## */
+.teamdetail {
+  text-align: center;
+}
+.teamdetail img {
+  border-radius: 50%;
+  width: 18rem;
+  padding: 2rem;
+}
+.team_pic_left , .team_pic_right {
+  display: flex;
+  /* bei kleinem Bildschirm dann ausrichtung anders */
+  /* flex-direction: column; */
+  align-items: center;
+}
+
+/* ########################### CONTACT ######################################## */
+.contact {
+  padding:2rem;
+  max-width: 25rem;
+}
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: .75rem;
+  border: 1px solid var(--bg-light-color);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: .75rem;
+  margin-bottom: .75rem;
+  resize: vertical;
+  font-size: 1rem;
+}
+button {
+  background-color: var(--bg-light-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  text-align: center;
+}
+button:hover {
+  background-color: var(--bg-dark-color);
+}
+/* ########################### FOOTER ######################################## */
+
+footer {
+  width: 100%;
+  height: 3rem;
+  padding-block: 2rem;
+  text-align: center;  
+  background-color: var(--theme-color);
+}
+footer a {
+  text-decoration: none;
+  
+}
+
+footer a:hover {
+  color: var(--link-color);
+}
+  
