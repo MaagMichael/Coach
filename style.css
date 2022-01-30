@@ -148,4 +148,23 @@ footer a {
 footer a:hover {
   color: var(--link-color);
 }
-  
+@media only screen and (max-width : 1200px){
+  .icon_pic_right {
+    display: flex; 
+    flex-flow: column-reverse; 
+  }
+  .icon_pic_left {
+    display: flex; 
+    flex-flow: column; 
+  }
+}
+@media only screen and (max-width : 900px){
+  .icon_pic_right, .team_pic_right {
+    display: flex; 
+    flex-flow: column-reverse; 
+  }
+  .icon_pic_left, .team_pic_left {
+    display: flex; 
+    flex-flow: column; 
+  }
+}
